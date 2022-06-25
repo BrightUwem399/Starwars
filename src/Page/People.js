@@ -22,7 +22,7 @@ function People() {
                 <p className="lead">A list of Starwars people</p>
                 <hr />
                 <div>
-                    <table class="table">
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -40,7 +40,7 @@ function People() {
                                     <td>{person.height}</td>
                                     <td>{person.hair_color}</td>
                                     <td>
-                                        <Link to={`/people/${index + 1}`}>Details</Link>
+                                        <Link to={`/person?id=${index + 1}`}>Details</Link>
                                     </td>
                                 </tr>
                             ))}
